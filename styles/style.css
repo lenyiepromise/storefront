@@ -13,7 +13,7 @@ header {
     justify-content: space-between;
     align-items: center;
     justify-items: center;
-    height: 4em;
+    height: 3em;
     background-color: lightgray;
 }
 
@@ -33,7 +33,7 @@ header {
 }
 /* Style for the main app logo */
 .storefront-logo {
-    width: 3em;
+    width: 2.1em;
     object-fit: cover; /* Ensure the logo fits within its container */
 }
 /* Style for the navigation links in the header */
@@ -47,7 +47,7 @@ header {
 
 /* Style for the nav-icons image size */
 .header-icon li a img{
-    width: 1.8em;
+    width: 1.6em;
 }
 /* Make the .slide-info section fit the full screen */
 .slide-info {
