@@ -84,3 +84,5 @@ header {
     66% { transform: translateX(-200%); }
     100% { transform: translateX(0); }
 }
+
+/* Style for the product sample on the home page */
