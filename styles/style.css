@@ -1,6 +1,5 @@
 /* Ensure the body and html take up the full viewport */
 html, body {
-    margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
@@ -15,6 +14,8 @@ header {
     justify-items: center;
     height: 3em;
     background-color: lightgray;
+
+    padding: 0 10px;
 }
 
 .header-icon {
@@ -86,3 +87,44 @@ header {
 }
 
 /* Style for the product sample on the home page */
+.product-sample {
+    width: 100%;
+    margin: 0 auto;
+
+    
+}
+/* styling each product */
+.product-x {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: justify;
+
+    border: 1px solid black;
+    border-radius: 0.5em;
+    margin:  5px;
+    object-fit: cover;
+}
+.product-name {
+    background-color: navy;
+    padding: 0.5rem;
+    color: antiquewhite;
+    border-radius: 0.5em 0.5em 0 0;
+
+    font-size: 20px;
+
+    margin: 0;
+}
+.product-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    margin: 0;
+    
+}
+.product-description {
+    grid-area: product-description;
+
+    border: 1px solid black;
+    margin: 0;
+}
