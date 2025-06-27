@@ -4,30 +4,44 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Storefront</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/style.css">
         <link rel="shortcut icon" href="assets/icon/icon-shopping-bag-favicon.png" type="image/x-icon">
 
-        <script src="scripts/app.js" defer></script>
     </head>
     <body>
         <header>
             <a href="index.html"><img class="logo" src="assets/icon/icon-shopping-bag-logo.png" alt="Logo"></a>
             <nav class="header-functionality">
                 <a href="#" class="header-icon">
-                    <img src="assets/icon/search.svg" alt="Search Icon" class="icon">
+                    <img src="assets/icon/search.svg" alt="Magnifying glass icon representing search functionality in the website header navigation, simple and neutral design, no text present" class="icon">
                 </a>
                 <a href="#" class="header-icon">
-                    <img src="assets/icon/store.svg" alt="Shop Icon" class="icon">
+                    <img src="assets/icon/store.svg" alt="Storefront icon showing a stylized shop building with a neutral tone used in the website header navigation, no text present, simple environment" class="icon">
                 </a>
                 <a href="#" class="header-icon">
-                    <img src="assets/icon/login.svg" alt="Login Icon" class="icon">
+                    <img src="assets/icon/login.svg" alt="Login icon showing an arrow entering a doorway, representing user login action in the website header navigation, no text present, neutral tone" class="icon">
                 </a>
             </nav>
         </header>
+        <section class="hero">
+            <div class="slider">
+                <img src="images/hero1.jpg" class="slide active">
+                <img src="images/hero2.jpg" class="slide">
+                <img src="images/hero3.jpg" class="slide">
+            </div>
+            <div class="dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </section>
         <main>
             <p>This is a simple HTML page with external CSS and JavaScript files.</p>
         </main>
         <footer>
             <p>&copy; 2023 My Simple HTML Page</p>
         </footer>
+    
+        <script src="scripts/app.js" async="false"></script>
+    </body>
 </html>
