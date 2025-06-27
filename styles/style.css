@@ -3,6 +3,23 @@ body, html {
   padding: 0;
 }
 
+header {
+    background-color: aliceblue;
+    
+    display: flex;
+}
+
+.header-functionality {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;;
+}
+
+.icon {
+    width: 3em;
+}
+
 .hero {
   position: relative;
   width: 100%;
