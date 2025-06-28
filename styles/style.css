@@ -6,13 +6,15 @@ body, html {
 header {
     background-color: aliceblue;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
 }
 
 .header-functionality {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;;
 }
 
 .logo {
