@@ -83,6 +83,37 @@ section {
     
 }
 
+/* media query for mobile devices */
+@media (max-width: 768px) {
+  #slide1 {
+    background-image: url("img/slider/top-online-store.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #slide2 {
+    background-image: url("img/slider/secured-transaction.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #slide3 {
+    background-image: url("img/slider/affordable.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #slide3 {
+    background-image: url("img/slider/delivery.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+}
+
+
 /* Style for the products section */
 .products {
     display: flex;
