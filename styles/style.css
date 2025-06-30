@@ -83,60 +83,10 @@ section {
     
 }
 
-/* media query for mobile devices */
-@media (max-width: 768px) {
-  #slide1 {
-    background-image: url("img/slider/top-online-store.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #slide2 {
-    background-image: url("img/slider/secured-transaction.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #slide3 {
-    background-image: url("img/slider/affordable.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #slide3 {
-    background-image: url("img/slider/delivery.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-}
-
-/* media query for laptop and large screen devices */
-@media (min-width: 1024px) {
-  #slide1 {
-    background-image: url("img/slider/laptop+ top-online-store.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #slide2 {
-    background-image: url("img/slider/laptop+ secured-transaction.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #slide3 {
-    background-image: url("img/slider/laptop+affordable.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  #slide4 {
-    background-image: url("img/slider/laptop+delivery.webp");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Style for the products section */
