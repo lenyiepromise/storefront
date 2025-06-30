@@ -34,46 +34,23 @@ header {
 }
 
 /* Style for the image slider*/
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
 .slide {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: opacity 0.8s ease;
-  z-index: 0;
+  transition: opacity 0.5s ease;
 }
+
 .slide.active {
   opacity: 1;
-  z-index: 1;
-}
-
-/* Slider controls (arrows) */
-.slider-controls {
-  position: absolute;
-  top: 50%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  padding: 0 10px;
-  z-index: 2;
-}
-
-.slider-controls button {
-  background: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: white;
-  font-size: 28px;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 4px;
-}
-
-.slider-controls button:hover {
-  background: rgba(0, 0, 0, 0.7);
 }
 
 .dots {
