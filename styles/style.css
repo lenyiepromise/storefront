@@ -120,3 +120,15 @@ section {
   font-size: 1rem;
   color: #444;
 }
+
+@media screen and (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-x {
+        width: 100%;
+        max-width: 90%;
+    }
+  
+}
