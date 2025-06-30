@@ -10,10 +10,10 @@ function preloadImgages(imageList) {
 function setSlideImages() {
   const isMobile = window.innerWidth < 768;
 
-  document.getElementById("top-online").src = isMobile ? "img/slider/mobile-top-online.webp" : "img/slider/desktop-top-online.webp";
-  document.getElementById("secured-transaction").src = isMobile ? "img/slider/mobile-secured-transaction.webp" : "img/slider/desktop-secured-transaction.webp";
-  document.getElementById("affordable").src = isMobile ? "img/slider/mobile-affordable.webp" : "img/slider/desktop-affordable.webp";
-  document.getElementById("delivery").src = isMobile ? "img/slider/mobile-delivery.webp" : "img/slider/desktop-delivery.webp";
+  document.getElementById("slide1").src = isMobile ? "img/slider/mobile-top-online.webp" : "img/slider/desktop-top-online.webp";
+  document.getElementById("slide2").src = isMobile ? "img/slider/mobile-secured-transaction.webp" : "img/slider/desktop-secured-transaction.webp";
+  document.getElementById("slide3").src = isMobile ? "img/slider/mobile-affordable.webp" : "img/slider/desktop-affordable.webp";
+  document.getElementById("slide4").src = isMobile ? "img/slider/mobile-delivery.webp" : "img/slider/desktop-delivery.webp";
 }
 
 // Preload all img/slider
@@ -48,7 +48,7 @@ dots.forEach((dot, i) => {
 
 // Initial setup
 window.addEventListener("load", () => {
-  setSlideImg/slider();
+  setSlideImages();
   showSlide(0); // Ensure first slide and dot are active on load
 });
-window.addEventListener("resize", setSlideImg/slider);
+window.addEventListener("resize", setSlideImages);
