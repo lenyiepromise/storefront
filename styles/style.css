@@ -92,34 +92,31 @@ section {
 /* Style for the products section */
 .products {
     display: flex;
-    justify-content: stretch;
+    justify-content: ;
     gap: 0.5em;
 }
 .product-x {
-    position: relative;
-    max-width: min-content;
-    object-fit: cover;
-    height: 80vh;
-    width: 100%;
-
-    background-color: aliceblue;
-    border-radius: 1em;
+    max-width: 400px;
+    width: 90%;
+    margin: auto;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
 }
 
 .product-name {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 0.5em;
-    height: auto;
-    padding: 0.5em;
+    font-size: 1.5rem;
+    margin: 10px 0;
 }
 .product-image {
-    height: 100%;
-    object-fit: cover;
-    height: 50vh;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 .product-description {
-  position: relative;
-  object-fit: cover;
-  padding: 0.5em;
+  font-size: 1rem;
+  color: #444;
 }
