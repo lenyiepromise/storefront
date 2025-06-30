@@ -109,10 +109,35 @@ section {
     background-position: center;
     background-repeat: no-repeat;
   }
-
-
 }
 
+/* media query for laptop and large screen devices */
+@media (min-width: 1024px) {
+  #slide1 {
+    background-image: url("img/slider/laptop+ top-online-store.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #slide2 {
+    background-image: url("img/slider/laptop+ secured-transaction.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #slide3 {
+    background-image: url("img/slider/laptop+affordable.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #slide4 {
+    background-image: url("img/slider/laptop+delivery.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
 
 /* Style for the products section */
 .products {
