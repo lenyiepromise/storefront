@@ -1,5 +1,5 @@
 // Preload slide img/slider
-function preloadImg/slider(imageList) {
+function preloadImgages(imageList) {
   imageList.forEach(src => {
     const img = new Image();
     img.src = src;
@@ -7,7 +7,7 @@ function preloadImg/slider(imageList) {
 }
 
 // Set img/slider based on device size
-function setSlideImg/slider() {
+function setSlideImages() {
   const isMobile = window.innerWidth < 768;
 
   document.getElementById("top-online").src = isMobile ? "img/slider/mobile-top-online.webp" : "img/slider/desktop-top-online.webp";
@@ -17,8 +17,8 @@ function setSlideImg/slider() {
 }
 
 // Preload all img/slider
-preloadImg/slider([
-	"img/slider/mobile-top-online.webp", "img/slider/mobile-secured-transaction.webp", "img/slider/mobile-affordable.webp", "img/slider/mobile-delivery.webp"
+preloadImgages([
+	"img/slider/mobile-top-online.webp", "img/slider/mobile-secured-transaction.webp", "img/slider/mobile-affordable.webp", "img/slider/mobile-delivery.webp",
 	"img/slider/desktop-top-online.webp", "img/slider/desktop-secured-transaction.webp", "img/slider/desktop-affordable.webp", "img/slider/desktop-delivery.webp",
 ]);
 
