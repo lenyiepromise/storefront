@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Storefront</title>
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="shortcut icon" href="assets/icon/icon-shopping-bag-favicon.png" type="image/x-icon">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storefront</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="shortcut icon" href="assets/icon/icon-shopping-bag-favicon.png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <a href="index.html"><img class="logo" src="assets/icon/icon-shopping-bag-logo.png" alt="Logo"></a>
+    <nav class="header-functionality">
+      <a href="#" class="header-icon">
+        <img src="assets/icon/search.svg" alt="Search" class="icon">
+      </a>
+      <a href="#" class="header-icon">
+        <img src="assets/icon/store.svg" alt="Store" class="icon">
+      </a>
+      <a href="#" class="header-icon">
+        <img src="assets/icon/login.svg" alt="Login" class="icon">
+      </a>
+    </nav>
+  </header>
 
-    </head>
-    <body>
-        <header>
-            <a href="index.html"><img class="logo" src="assets/icon/icon-shopping-bag-logo.png" alt="Logo"></a>
-            <nav class="header-functionality">
-                <a href="#" class="header-icon">
-                    <img src="assets/icon/search.svg" alt="Magnifying glass icon representing search functionality in the website header navigation, simple and neutral design, no text present" class="icon">
-                </a>
-                <a href="#" class="header-icon">
-                    <img src="assets/icon/store.svg" alt="Storefront icon showing a stylized shop building with a neutral tone used in the website header navigation, no text present, simple environment" class="icon">
-                </a>
-                <a href="#" class="header-icon">
-                    <img src="assets/icon/login.svg" alt="Login icon showing an arrow entering a doorway, representing user login action in the website header navigation, no text present, neutral tone" class="icon">
-                </a>
-            </nav>
-        </header>
+  <section class="hero">
+    <div class="slider">
+      <img alt="Top online store" class="slide active" id="slide1">
+      <img alt="Secured transaction" class="slide" id="slide2">
+      <img alt="Affordable products" class="slide" id="slide3">
+      <img alt="Fast delivery" class="slide" id="slide4">
 
-        <section class="hero">
-            <div class="slider">
-                <img alt="Active slide showing by default" class="slide active" id="slide1">
-                <img alt="Second slide" class="slide" id="slide2">
-                <img alt="Third slide" class="slide" id="slide3">
-                <img alt="Fourth slide" class="slide" id="slide4">
-            </div>
-            <div class="slider-controls">
-                <button id="prevBtn" aria-label="Previous slide">&#10094;</button>
-                <button id="nextBtn" aria-label="Next slide">&#10095;</button>
-            </div>
-            <div class="dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </section>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+  </section>
 
-        <section class="products">
-            <div class="product-x">
-                <h1 class="product-name">MacBook Air M2 Silver</h1>
-                <img alt="This product photo" src="img/product-x/Two MacBook Air M2 Silver Mockup.webp" class="product-image">
-                <p class="product-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil alias saepe ad consectetur expedita minus adipisci atque, id esse rem provident ipsam illum sequi ab repellat. Unde minus aspernatur odio deleniti corporis quas et ratione fuga rem accusamus! Laborum, expedita in voluptate praesentium iure aperiam provident nisi eum nobis.
-                </p>
-                
-            </div>
-            <div class="product-x">
-                <h1 class="product-name">MacBook Air M2 Silver</h1>
-                <img alt="This product photo" src="img/product-x/Two MacBook Air M2 Silver Mockup.webp" class="product-image">
-                <p class="product-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nihil alias saepe ad consectetur expedita minus adipisci atque, id esse rem provident ipsam illum sequi ab repellat. Unde minus aspernatur odio deleniti corporis quas et ratione fuga rem accusamus! Laborum, expedita in voluptate praesentium iure aperiam provident nisi eum nobis.
-                </p>
-            </div>
-        </section>
-    
-        <script src="scripts/app.js" async="false"></script>
-    </body>
+  <section class="products">
+    <!-- Product 1 -->
+    <div class="product-x">
+      <h1 class="product-name">MacBook Air M2 Silver</h1>
+      <img alt="MacBook Air M2 Silver" src="img/product-x/macbook1.webp" class="product-image">
+      <p class="product-description">
+        Sleek and light. Powered by Apple's M2 chip, perfect for professionals on the move.
+      </p>
+      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-x">
+      <h1 class="product-name">iPhone 14 Pro Max</h1>
+      <img alt="iPhone 14 Pro Max" src="img/product-x/iphone14.webp" class="product-image">
+      <p class="product-description">
+        A new level of Pro. Dynamic Island, 48MP camera, and A16 Bionic chip.
+      </p>
+      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-x">
+      <h1 class="product-name">Sony WH-1000XM5</h1>
+      <img alt="Sony Headphones" src="img/product-x/sony-headphones.webp" class="product-image">
+      <p class="product-description">
+        Industry-leading noise cancellation and superior sound quality for audiophiles.
+      </p>
+      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-x">
+      <h1 class="product-name">Samsung Galaxy Watch 6</h1>
+      <img alt="Samsung Galaxy Watch" src="img/product-x/galaxy-watch.webp" class="product-image">
+      <p class="product-description">
+        Fitness tracking, sleep monitoring, and sleek design in one smart wearable.
+      </p>
+      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+    </div>
+
+    <!-- Product 5 -->
+    <div class="product-x">
+      <h1 class="product-name">Canon EOS R7 Camera</h1>
+      <img alt="Canon Camera" src="img/product-x/canon-r7.webp" class="product-image">
+      <p class="product-description">
+        Mirrorless power with 32MP APS-C sensor, ideal for content creators.
+      </p>
+      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+    </div>
+
+    <!-- Product 6 -->
+    <div class="product-x">
+      <h1 class="product-name">Nintendo Switch OLED</h1>
+      <img alt="Nintendo Switch" src="img/product-x/switch-oled.webp" class="product-image">
+      <p class="product-description">
+        Play anywhere with vibrant OLED display and versatile Joy-Con gameplay.
+      </p>
+      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+    </div>
+  </section>
+
+  <script src="scripts/app.js" defer></script>
+</body>
 </html>
