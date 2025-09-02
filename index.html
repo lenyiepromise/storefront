@@ -14,8 +14,9 @@
       <a href="#" class="header-icon">
         <img src="assets/icon/search.svg" alt="Search" class="icon">
       </a>
-      <a href="#" class="header-icon">
+      <a href="store.html" class="header-icon">
         <img src="assets/icon/store.svg" alt="Store" class="icon">
+        <span class="cart-count" id="cart-count">0</span>
       </a>
       <a href="#" class="header-icon">
         <img src="assets/icon/login.svg" alt="Login" class="icon">
@@ -25,10 +26,10 @@
 
   <section class="hero">
     <div class="slider">
-      <img alt="Top online store" class="slide active" id="slide1">
-      <img alt="Secured transaction" class="slide" id="slide2">
-      <img alt="Affordable products" class="slide" id="slide3">
-      <img alt="Fast delivery" class="slide" id="slide4">
+      <img alt="Top online store" class="slide active" id="slide1" src="img/slider/desktop-top-online-store.webp">
+      <img alt="Secured transaction" class="slide" id="slide2" src="img/slider/desktop-secured-transaction.webp">
+      <img alt="Affordable products" class="slide" id="slide3" src="img/slider/desktop-affordable.webp">
+      <img alt="Fast delivery" class="slide" id="slide4" src="img/slider/desktop-delivery.webp">
 
       <div class="dots">
         <span class="dot active"></span>
@@ -40,66 +41,36 @@
   </section>
 
   <section class="products">
-    <!-- Product 1 -->
     <div class="product-x">
       <h1 class="product-name">MacBook Air M2 Silver</h1>
       <img alt="MacBook Air M2 Silver" src="img/product-x/macbook1.webp" class="product-image">
-      <p class="product-description">
-        Sleek and light. Powered by Apple's M2 chip, perfect for professionals on the move.
-      </p>
-      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+      <p class="product-description">Sleek and light. Powered by Apple's M2 chip, perfect for professionals on the move.</p>
+      <button class="go-to-store">Go to Store</button>
     </div>
 
-    <!-- Product 2 -->
     <div class="product-x">
       <h1 class="product-name">iPhone 14 Pro Max</h1>
       <img alt="iPhone 14 Pro Max" src="img/product-x/iphone14.webp" class="product-image">
-      <p class="product-description">
-        A new level of Pro. Dynamic Island, 48MP camera, and A16 Bionic chip.
-      </p>
-      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+      <p class="product-description">Dynamic Island, 48MP camera, and A16 Bionic chip.</p>
+      <button class="go-to-store">Go to Store</button>
     </div>
 
-    <!-- Product 3 -->
     <div class="product-x">
       <h1 class="product-name">Sony WH-1000XM5</h1>
       <img alt="Sony Headphones" src="img/product-x/sony-headphones.webp" class="product-image">
-      <p class="product-description">
-        Industry-leading noise cancellation and superior sound quality for audiophiles.
-      </p>
-      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
-    </div>
-
-    <!-- Product 4 -->
-    <div class="product-x">
-      <h1 class="product-name">Samsung Galaxy Watch 6</h1>
-      <img alt="Samsung Galaxy Watch" src="img/product-x/galaxy-watch.webp" class="product-image">
-      <p class="product-description">
-        Fitness tracking, sleep monitoring, and sleek design in one smart wearable.
-      </p>
-      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
-    </div>
-
-    <!-- Product 5 -->
-    <div class="product-x">
-      <h1 class="product-name">Canon EOS R7 Camera</h1>
-      <img alt="Canon Camera" src="img/product-x/canon-r7.webp" class="product-image">
-      <p class="product-description">
-        Mirrorless power with 32MP APS-C sensor, ideal for content creators.
-      </p>
-      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
-    </div>
-
-    <!-- Product 6 -->
-    <div class="product-x">
-      <h1 class="product-name">Nintendo Switch OLED</h1>
-      <img alt="Nintendo Switch" src="img/product-x/switch-oled.webp" class="product-image">
-      <p class="product-description">
-        Play anywhere with vibrant OLED display and versatile Joy-Con gameplay.
-      </p>
-      <button class="go-to-store" onclick="window.location.href='store.html'">Go to Store</button>
+      <p class="product-description">Noise cancellation and superior sound quality for audiophiles.</p>
+      <button class="go-to-store">Go to Store</button>
     </div>
   </section>
+
+  <footer>
+    <p>&copy; 2025 Storefront. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="#"><img src="assets/icon/facebook.svg" alt="Facebook" class="footer-icon"></a>
+      <a href="#"><img src="assets/icon/twitter.svg" alt="Twitter" class="footer-icon"></a>
+      <a href="#"><img src="assets/icon/instagram.svg" alt="Instagram" class="footer-icon"></a>
+    </div>
+  </footer>
 
   <script src="scripts/app.js" defer></script>
 </body>

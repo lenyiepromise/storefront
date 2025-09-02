@@ -1,85 +1,20 @@
-// Preload images
-function preloadImages(imageList) {
-  imageList.forEach(src => {
-    const img = new Image();
-    img.src = src;
-  });
-}
+// Slider
+let currentSlide=0, slideInterval, delay=5000;
+const slides=document.querySelectorAll('.slide');
+const dots=document.querySelectorAll('.dot');
 
-// Set slide images based on screen size
-function setSlideImages() {
-  const isMobile = window.innerWidth < 768;
-  const images = [
-    isMobile ? "img/slider/mobile-top-online-store.webp" : "img/slider/desktop-top-online-store.webp",
-    isMobile ? "img/slider/mobile-secured-transaction.webp" : "img/slider/desktop-secured-transaction.webp",
-    isMobile ? "img/slider/mobile-affordable.webp" : "img/slider/desktop-affordable.webp",
-    isMobile ? "img/slider/mobile-delivery.webp" : "img/slider/desktop-delivery.webp"
-  ];
+function showSlide(i){slides.forEach((s,j)=>{s.classList.toggle('active', j===i); dots[j].classList.toggle('active', j===i)}); currentSlide=i;}
+function nextSlide(){showSlide((currentSlide+1)%slides.length);}
+function startSlider(){slideInterval=setInterval(nextSlide, delay);}
+function stopSlider(){clearInterval(slideInterval);}
+dots.forEach((dot,i)=>{dot.addEventListener('click',()=>{showSlide(i); stopSlider(); startSlider();});});
+document.querySelector(".slider")?.addEventListener("mouseenter", stopSlider);
+document.querySelector(".slider")?.addEventListener("mouseleave", startSlider);
+window.addEventListener("load",()=>{showSlide(0); startSlider();});
 
-  images.forEach((src, i) => {
-    const slide = document.getElementById(`slide${i + 1}`);
-    if (slide) slide.src = src;
-  });
-}
-
-// Preload all slider images
-preloadImages([
-  "img/slider/mobile-top-online-store.webp",
-  "img/slider/mobile-secured-transaction.webp",
-  "img/slider/mobile-affordable.webp",
-  "img/slider/mobile-delivery.webp",
-  "img/slider/desktop-top-online-store.webp",
-  "img/slider/desktop-secured-transaction.webp",
-  "img/slider/desktop-affordable.webp",
-  "img/slider/desktop-delivery.webp"
-]);
-
-// Slider logic
-let currentSlide = 0;
-let slideInterval;
-const delay = 5000;
-
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    slide.classList.toggle('active', i === index);
-    dots[i].classList.toggle('active', i === index);
-  });
-  currentSlide = index;
-}
-
-function nextSlide() {
-  showSlide((currentSlide + 1) % slides.length);
-}
-
-function startSlider() {
-  slideInterval = setInterval(nextSlide, delay);
-}
-
-function stopSlider() {
-  clearInterval(slideInterval);
-}
-
-// Dot navigation
-dots.forEach((dot, i) => {
-  dot.addEventListener('click', () => {
-    showSlide(i);
-    stopSlider();
-    startSlider();
-  });
-});
-
-// Pause slider on hover
-document.querySelector(".slider").addEventListener("mouseenter", stopSlider);
-document.querySelector(".slider").addEventListener("mouseleave", startSlider);
-
-// Initial setup
-window.addEventListener("load", () => {
-  setSlideImages();
-  showSlide(0);
-  startSlider();
-});
-
-window.addEventListener("resize", setSlideImages);
+// Cart simulation
+let cartCount=0;
+function updateCartCount(){document.getElementById('cart-count')?.textContent=cartCount; document.getElementById('cart-count-store')?.textContent=cartCount;}
+document.querySelectorAll('.add-to-cart').forEach(btn=>{btn.addEventListener('click',()=>{cartCount++; updateCartCount(); alert("Added to cart!");});});
+document.querySelectorAll('.go-to-store').forEach(btn=>{btn.addEventListener('click',()=>{window.location.href='store.html';});});
+updateCartCount();
